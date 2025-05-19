@@ -19,8 +19,4 @@ class Tenant extends Model
         'isOpen' => 'boolean',
     ];
 
-    public function location()
-    {
-        return $this->belongsTo(TenantLocation::class, 'tenant_location_id');
-    }
 }
